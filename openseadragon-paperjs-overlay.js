@@ -12,10 +12,10 @@
 		});
 	} else if (typeof module === 'object' && module.exports) {
 		// Node/CommonJS
-		module.exports = factory(require('jquery'), global, global.document);
+		module.exports = factory(require('paper'), global, global.document);
 	} else {
 		// Browser globals
-		factory(jQuery, global, global.document);
+		factory(paper, global, global.document);
     }(typeof window !== 'undefined' ? window : this, function (paper, window, document, undefined) {
         
         if (!window.OpenSeadragon) {
