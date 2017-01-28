@@ -4,18 +4,23 @@ An [OpenSeadragon](http://openseadragon.github.io) plugin that adds [Paper.js](h
 
 Compatible with OpenSeadragon 2.0.0 or greater.
 
-License: The BSD 3-Clause License. The software was forked from [OpenseadragonFabricjsOverlay](https://github.com/altert/OpenseadragonFabricjsOverlay), that also is licensed under the BSD 3-Clause License.
+License: The BSD 3-Clause License. The software was forked from [OpenseadragonPaperjsOverlay]https://github.com/eriksjolund/OpenSeadragonPaperjsOverlay), that also is licensed under the BSD 3-Clause License.
 
-##Demo web page
+## Modifications
+- Fixed compatiblity with node and webpack.
+- Fixed resizecanvas() errors when canvas is empty.
+- Implemented clear function on overlay.
 
-See the [online demo](http://eriksjolund.github.io/OpenSeadragonPaperjsOverlay/drag_circles.html)
+## Demo web page
+
+See the [online demo](http://theguardianwolf.github.io/OpenSeadragonPaperjsOverlay/drag_circles.html)
 where some Paper.js circles are shown on top of an OpenSeadragon window. The circles can be dragged with the mouse.
 
 ## Introduction
 
 To use, include the `openseadragon-paperjs-overlay.js` file after `openseadragon.js` on your web page.
-   
-To add Paper.js overlay capability to your OpenSeadragon Viewer, call `paperjsOverlay()` on it. 
+
+To add Paper.js overlay capability to your OpenSeadragon Viewer, call `paperjsOverlay()` on it.
 
 `````javascript
     var viewer = new OpenSeadragon.Viewer(...);

@@ -1,5 +1,6 @@
 Contributors to OpenSeadragonPaperjsOverlay
 
+[Jerry Fan](https://github.com/TheGuardianWolf)
 [Erik Sjölund](https://github.com/eriksjolund), [Karolinska Institutet](http://ki.se)
 
 

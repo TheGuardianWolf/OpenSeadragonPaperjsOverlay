@@ -103,8 +103,11 @@
 			this._canvas.setAttribute('height', this._containerHeight);
 			paper.view.viewSize = new paper.Size(this._containerWidth, this._containerHeight);
 			var viewportZoom = this._viewer.viewport.getZoom(true);
-			var image1 = this._viewer.world.getItemAt(0);
-			paper.view.zoom = image1.viewportToImageZoom(viewportZoom);
+			console.log(this._viewer.world.getItemAt(0));
+			var image1 = this._viewer.world.getItemAt(0); // Bugged
+			if (image1) {
+				paper.view.zoom = image1.viewportToImageZoom(viewportZoom);
+			}
 			var center = this._viewer.viewport.viewportToImageCoordinates(this._viewer.viewport.getCenter(true));
 			paper.view.center = new paper.Point(center.x, center.y);
 		}

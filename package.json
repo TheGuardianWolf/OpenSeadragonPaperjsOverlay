@@ -1,6 +1,6 @@
 {
   "name": "openseadragon-paperjs-overlay",
-  "version": "0.0.1",
+  "version": "0.0.4",
   "description": "An OpenSeadragon plugin that adds Paper.js canvas overlay capability.",
   "main": "openseadragon-paperjs-overlay.js",
   "dependencies": {
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/eriksjolund/OpenSeadragonPaperjsOverlay.git"
+    "url": "https://github.com/TheGuardianWolf/OpenSeadragonPaperjsOverlay.git"
   },
   "files": [ ],
   "keywords": [
@@ -21,10 +21,10 @@
     "canvas",
     "overlay"
   ],
- "author": "Erik Sjölund",
+ "author": "Jerry FanErik Sjölund",
   "license": "BSD-3-Clause",
   "bugs": {
-      "url": "https://github.com/eriksjolund/OpenSeadragonPaperjsOverlay/issues"
+      "url": "https://github.com/TheGuardianWolf/OpenSeadragonPaperjsOverlay/issues"
   },
-  "homepage": "https://github.com/eriksjolund/OpenSeadragonPaperjsOverlay"
+  "homepage": "https://github.com/TheGuardianWolf/OpenSeadragonPaperjsOverlay"
 }
