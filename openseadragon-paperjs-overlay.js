@@ -103,8 +103,7 @@
 			this._canvas.setAttribute('height', this._containerHeight);
 			paper.view.viewSize = new paper.Size(this._containerWidth, this._containerHeight);
 			var viewportZoom = this._viewer.viewport.getZoom(true);
-			console.log(this._viewer.world.getItemAt(0));
-			var image1 = this._viewer.world.getItemAt(0); // Bugged
+			var image1 = this._viewer.world.getItemAt(0);
 			if (image1) {
 				paper.view.zoom = image1.viewportToImageZoom(viewportZoom);
 			}
