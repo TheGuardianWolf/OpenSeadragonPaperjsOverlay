@@ -5,23 +5,23 @@
 // OpenSeadragon canvas Overlay plugin 0.0.1 based on svg overlay plugin
 
 (function() {
-
-	if (!paper) {
-		var paper;
-
-		if (typeof module === 'object' && module.exports) {
-			paper = require('paper');
-		}
-		else if (typeof define === 'function' && define.amd) {
-			define(['paper'], function(_paper) { paper = _paper })
-		}
-		else {
-			console.error('[openseadragon-canvas-overlay] requires PaperJS');
-			return;
-		}
+	var paperModule;
+	if (!window && !window.paper) {
+		paperModule = window.paper;
+	else if (typeof module === 'object' && module.exports) {
+		paperModule = require('paper');
 	}
+	else if (typeof define === 'function' && define.amd) {
+		define(['paper'], function(_paper) { paperModule = _paper })
+	}
+	else {
+		console.error('[openseadragon-canvas-overlay] requires PaperJS');
+		return;
+	}
+	
+	var paper = paperModule;
 
-	if (!window.OpenSeadragon) {
+	if (!window && !window.OpenSeadragon) {
 		console.error('[openseadragon-canvas-overlay] requires OpenSeadragon');
 		return;
 	}
