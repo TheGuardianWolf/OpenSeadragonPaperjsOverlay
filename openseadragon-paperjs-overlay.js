@@ -6,8 +6,9 @@
 
 (function() {
 	var paperModule;
-	if (!window && !window.paper) {
+	if (window && window.paper) {
 		paperModule = window.paper;
+	}
 	else if (typeof module === 'object' && module.exports) {
 		paperModule = require('paper');
 	}
