@@ -6,6 +6,8 @@ An [OpenSeadragon](http://openseadragon.github.io) plugin that adds [Paper.js](h
 
 Compatible with OpenSeadragon 2.0.0 or greater.
 
+Experiencing disappearing paper objects on OSD viewport change? Use paperjs version 0.9.5 and manually trigger redraws instead.
+
 License: The BSD 3-Clause License. The software was forked from [OpenseadragonPaperjsOverlay]https://github.com/eriksjolund/OpenSeadragonPaperjsOverlay), that also is licensed under the BSD 3-Clause License.
 
 ## Modifications
