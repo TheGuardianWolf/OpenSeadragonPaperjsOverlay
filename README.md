@@ -1,6 +1,6 @@
 # OpenSeadragonPaperjsOverlay
 
-This fork of the OpenSeadragonPaperjsOverlay adds webpack and nodejs support along with a few improvements. 
+This fork of the OpenSeadragonPaperjsOverlay adds webpack and nodejs support along with a few improvements. You still MUST require OpenSeadragon before this module as OpenSeadragon loads on to the window object.
 
 An [OpenSeadragon](http://openseadragon.github.io) plugin that adds [Paper.js](http://paperjs.org) overlay capability.
 
